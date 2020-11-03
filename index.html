@@ -26,24 +26,47 @@
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
-    <title>My Theatre</title>
+    <title>FOUR seasons in JAPAN</title>
 </head>
-<body>
+<body style="text-align:center;">
 
     <!-- home -->
     <div data-role="page" id="home">
         <div data-role="header">
-            <h1>My Theatre</h1>
+            <h1>FOUR seasons in JAPAN</h1>
         </div>
 
         <div role="main" class="ui-content">
             <p>Hello world</p>
-            <ul>
-                <li><a href="#aboutme">ABOUT ME</a></li>
-                <li><a href="#page01">HISTORY</a></li>
-                <li><a href="#page02">FILM AWARDS</a></li>
-                <li><a href="#page03">MY favourite FILMS</a></li>
+
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#spring" data-transition="slidedown">
+                    <img src="../_assets/img/album-bb.jpg">
+                <h2>SPRING</h2>
+                <p>Broken Bells</p></a>
+                </li>
+            
+            
+                <li><a href="#summer" data-transition="slidedown">
+                    <img src="../_assets/img/album-hc.jpg">
+                <h2>SUMMER</h2>
+                <p>Introducing history about films</p></a>
+                </li>
+            
+            
+                <li><a href="#autumn" data-transition="slidedown">
+                    <img src="../_assets/img/album-p.jpg">
+                <h2>AUTUMN</h2>
+                <p>There are many worthy awards to contribute film makers all over the world.</p></a>
+                </li>
+
+                <li><a href="#winter" data-transition="slidedown">
+                    <img src="../_assets/img/album-p.jpg">
+                <h2>WINTER</h2>
+                <p>Here are parts of my favoutie films. Hope you like them!</p></a>
+                </li>
             </ul>
+
         </div>
 
         <div data-role="footer" data-position="fixed">
@@ -52,26 +75,10 @@
 
     </div><!-- home -->
 
-    <!-- ABOUT ME -->
-    <div data-role="page" id="aboutme">
+    <!-- SPRING -->
+    <div data-role="page" id="spring">
         <div data-role="header">
-            <h1>My Theatre</h1>
-        </div>
-
-        <div role="main" class="ui-content">
-            <p>ABOUT ME</p>
-            
-        </div>
-
-        <div data-role="footer" data-position="fixed">
-            <h4>Copyright &copy; Tomoko Ogura</h4>
-        </div>
-
-    </div><!-- ABOUT ME -->
-
-    <!-- HISTORY -->
-    <div data-role="page" id="page01">
-        <div data-role="header">
+            <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all" data-transition="slideup">home</a>
             <h1>My Theatre</h1>
         </div>
 
@@ -81,14 +88,21 @@
         </div>
 
         <div data-role="footer" data-position="fixed">
-            <h4>Copyright &copy; Tomoko Ogura</h4>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#summer" data-icon="bullets" data-transition="slidedown">SUMMER</a></li>
+                    <li><a href="#autumn" data-icon="bullets" data-transition="slidedown">AUTUMN</a></li>
+                    <li><a href="#winter" data-icon="bullets" data-transition="slidedown">WINTER</a></li>
+                </ul>
+            </div>
         </div>
 
-    </div><!-- HISTORY -->
+    </div><!-- SPRING -->
 
-    <!-- FILM AWARDS -->
-    <div data-role="page" id="page02">
+    <!-- SUMMER -->
+    <div data-role="page" id="summer">
         <div data-role="header">
+            <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all" data-transition="slideup">home</a>
             <h1>My Theatre</h1>
         </div>
 
@@ -98,14 +112,21 @@
         </div>
 
         <div data-role="footer" data-position="fixed">
-            <h4>Copyright &copy; Tomoko Ogura</h4>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#spring" data-icon="bullets" data-transition="slidedown">SPRING</a></li>
+                    <li><a href="#autumn" data-icon="bullets" data-transition="slidedown">AUTUMN</a></li>
+                    <li><a href="#winter" data-icon="bullets" data-transition="slidedown">WINTER</a></li>
+                </ul>
+            </div>
         </div>
 
-    </div><!-- FILM AWARDS -->
+    </div><!-- SUMMER -->
 
-    <!-- MY favourite FILMS -->
-    <div data-role="page" id="page03">
+    <!-- AUTUMN -->
+    <div data-role="page" id="autumn">
         <div data-role="header">
+            <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all" data-transition="slideup">home</a>
             <h1>My Theatre</h1>
         </div>
 
@@ -115,10 +136,40 @@
         </div>
 
         <div data-role="footer" data-position="fixed">
-            <h4>Copyright &copy; Tomoko Ogura</h4>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#spring" data-icon="bullets" data-transition="slidedown">SPRING</a></li>
+                    <li><a href="#summer" data-icon="bullets" data-transition="slidedown">SUMMER</a></li>
+                    <li><a href="#winter" data-icon="bullets" data-transition="slidedown">WINTER</a></li>
+                </ul>
+            </div>
         </div>
 
-    </div><!-- MY favourite FILMS -->
+    </div><!-- AUTUMN -->
+
+    <!-- WINTER -->
+    <div data-role="page" id="winter">
+        <div data-role="header">
+            <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all" data-transition="slideup">home</a>
+            <h1>My Theatre</h1>
+        </div>
+
+        <div role="main" class="ui-content">
+            <p>MY favourite FILMS</p>
+            
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#spring" data-icon="bullets" data-transition="slidedown">SPRING</a></li>
+                    <li><a href="#summer" data-icon="bullets" data-transition="slidedown">SUMMER</a></li>
+                    <li><a href="#autumn" data-icon="bullets" data-transition="slidedown">AUTUMN</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div><!-- WINTER -->
     
 
 </body>
