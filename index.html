@@ -22,13 +22,37 @@
     <meta name="msapplication-TileImage" content="img/icon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+    <link rel="stylesheet" href="themes/jp.css" />
+    <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />   
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" /> 
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+
+
     <title>FOUR seasons in JAPAN</title>
+
 </head>
-<body style="text-align:center;">
+
+<style>.video-wrapper{
+    position: relative;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    height: 100%;
+}
+
+</style>
+
+<body style="text-align:center; font-family:'Noto Sans TC', sans-serif;" >
 
     <!-- home -->
     <div data-role="page" id="home">
@@ -37,34 +61,35 @@
         </div>
 
         <div role="main" class="ui-content">
-            <img src="img/japan.jpg" alt="">
+            <img src="img/japan.jpg" alt="" style="max-width: 100%;">
             <p>Japan is one of the beautiful countries in the World.</p>
             <p>We have significant scenery, interesting culture, outstanding food and so on.</p>
             <p>Among them, I am proud that we have FOUR seasons; Spring, Summer, Autumn and Winter.</p>
             <p>Each season have unique features. Here is introduction of each season events in JAPAN!</p>
+            
             <ul data-role="listview" data-inset="true">
-                <li><a href="#spring" data-transition="slidedown">
-                    <img src="../_assets/img/album-bb.jpg">
+                <li><a href="#spring" data-transition="slide">
+                    <img src="img/haru.jpg">
                 <h2>SPRING</h2>
                 <p>Broken Bells</p></a>
                 </li>
             
             
-                <li><a href="#summer" data-transition="slidedown">
-                    <img src="../_assets/img/album-hc.jpg">
+                <li><a href="#summer" data-transition="slide">
+                    <img src="img/natsu.jpg">
                 <h2>SUMMER</h2>
                 <p>Introducing history about films</p></a>
                 </li>
             
             
-                <li><a href="#autumn" data-transition="slidedown">
-                    <img src="../_assets/img/album-p.jpg">
+                <li><a href="#autumn" data-transition="slide">
+                    <img src="img/aki.jpg">
                 <h2>AUTUMN</h2>
                 <p>There are many worthy awards to contribute film makers all over the world.</p></a>
                 </li>
 
-                <li><a href="#winter" data-transition="slidedown">
-                    <img src="../_assets/img/album-p.jpg">
+                <li><a href="#winter" data-transition="slide">
+                    <img src="img/fuyu.jpg">
                 <h2>WINTER</h2>
                 <p>Here are parts of my favoutie films. Hope you like them!</p></a>
                 </li>
@@ -81,24 +106,51 @@
     <!-- SPRING -->
     <div data-role="page" id="spring">
         <div data-role="header">
-            <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all" data-transition="slideup">home</a>
+            <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all" data-transition="fade">home</a>
             <h1>春</h1>
             <h1>SPRING</h1>
         </div>
 
         <div role="main" class="ui-content">
+            <div data-role="collapsibleset" data-theme="a" data-content-theme="a">
+                <div data-role="collapsible">
+                    <h3>WHEN is it?</h3>
+                <p>Officially March to May</p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>HOW is the weather?</h3>
+                    <h4>Average High and Low Temperature in Tokyo</h4>
+                    <p>
+                        <ul style="list-style: none; padding-left: 0;" >
+                            <li>March 16℃ - 4℃ </li>
+                            <li>April 20℃ - 10℃ </li>
+                            <li>May 26℃ - 15℃ </li>
+                        </ul>
+                    </p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>WHAT is the seasonal food?</h3>
+                <p>Bamboo shoots, Sakura-mochi, Strawberrys etc</p>
+                </div>
+            </div>
+
             <p>Our Spring will start from March.</p>
             <p>The most remarkable event is cherry blossom viewing called お花見.</p>
-            <p>Somei-yoshino (染井吉野) is planted all over Japan. Normally, it will bloom around March to May from South to North through out Japan.</p>
-            
+            <p>Somei-yoshino (染井吉野) is planted all over Japan. Normally, it will bloom around March to May from South to North throughout Japan.</p>
+            <div class="video-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/OEEIiv5YzzY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                
+
+            </div>
         </div>
 
         <div data-role="footer" data-position="fixed">
             <div data-role="navbar">
                 <ul>
-                    <li><a href="#summer" data-icon="bullets" data-transition="slidedown">SUMMER</a></li>
-                    <li><a href="#autumn" data-icon="bullets" data-transition="slidedown">AUTUMN</a></li>
-                    <li><a href="#winter" data-icon="bullets" data-transition="slidedown">WINTER</a></li>
+                    <li><a href="#summer" data-icon="arrow-u" data-transition="slideup">SUMMER</a></li>
+                    <li><a href="#autumn" data-icon="arrow-u" data-transition="slideup">AUTUMN</a></li>
+                    <li><a href="#winter" data-icon="arrow-u" data-transition="slideup">WINTER</a></li>
                 </ul>
             </div>
         </div>
@@ -108,21 +160,44 @@
     <!-- SUMMER -->
     <div data-role="page" id="summer">
         <div data-role="header">
-            <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all" data-transition="slideup">home</a>
+            <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all" data-transition="fade">home</a>
             <h1>SUMMER</h1>
         </div>
 
         <div role="main" class="ui-content">
-            <p></p>
+            <div data-role="collapsibleset" data-theme="a" data-content-theme="a">
+                <div data-role="collapsible">
+                    <h3>WHEN is it?</h3>
+                <p>Officially June to August</p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>HOW is the weather?</h3>
+                    <h4>Average High and Low Temperature in Tokyo</h4>
+                    <p>
+                        <ul style="list-style: none; padding-left: 0;" >
+                            <li>June 26℃ - 19℃ (rainy season)</li>
+                            <li>July 30℃ - 23℃ </li>
+                            <li>August 31℃ - 24℃ (Typhoon season)</li>
+                        </ul>
+                    </p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>WHAT is the seasonal food?</h3>
+                <p>Unagi, Somen, Watermelon etc</p>
+                </div>
+            </div>
+
+            <img src="img/hanabi.jpg" alt="" style="max-width: 100%;">
+            <p>In the Summer, there are many festival all over Japan. We will wear Yukata (a Japanese traditional cloth) and appreciate fire works.</p>
             
         </div>
 
         <div data-role="footer" data-position="fixed">
             <div data-role="navbar">
                 <ul>
-                    <li><a href="#spring" data-icon="bullets" data-transition="slidedown">SPRING</a></li>
-                    <li><a href="#autumn" data-icon="bullets" data-transition="slidedown">AUTUMN</a></li>
-                    <li><a href="#winter" data-icon="bullets" data-transition="slidedown">WINTER</a></li>
+                    <li><a href="#spring" data-icon="arrow-u" data-transition="slideup">SPRING</a></li>
+                    <li><a href="#autumn" data-icon="arrow-u" data-transition="slideup">AUTUMN</a></li>
+                    <li><a href="#winter" data-icon="arrow-u" data-transition="slideup">WINTER</a></li>
                 </ul>
             </div>
         </div>
@@ -132,11 +207,36 @@
     <!-- AUTUMN -->
     <div data-role="page" id="autumn">
         <div data-role="header">
-            <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all" data-transition="slideup">home</a>
-            <h1>My Theatre</h1>
+            <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all" data-transition="fade">home</a>
+            <h1>AUTUMN</h1>
         </div>
 
         <div role="main" class="ui-content">
+
+            <div data-role="collapsibleset" data-theme="a" data-content-theme="a">
+                <div data-role="collapsible">
+                    <h3>WHEN is it?</h3>
+                <p>Officially September to November</p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>HOW is the weather?</h3>
+                    <h4>Average High and Low Temperature in Tokyo</h4>
+                    <p>
+                        <ul style="list-style: none; padding-left: 0;" >
+                            <li>September 27℃ - 20℃</li>
+                            <li>October 22℃ - 15℃ </li>
+                            <li>November 17℃ - 9℃</li>
+                        </ul>
+                    </p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>WHAT is the seasonal food?</h3>
+                <p>Sweetpotates, Chestnuts, Pumpkins, Grapes etc</p>
+                </div>
+            </div>
+
+            <img src="img/momiji.jpg" alt="" style="max-width: 100%;">
+
             <p>MY favourite FILMS</p>
             
         </div>
@@ -144,9 +244,9 @@
         <div data-role="footer" data-position="fixed">
             <div data-role="navbar">
                 <ul>
-                    <li><a href="#spring" data-icon="bullets" data-transition="slidedown">SPRING</a></li>
-                    <li><a href="#summer" data-icon="bullets" data-transition="slidedown">SUMMER</a></li>
-                    <li><a href="#winter" data-icon="bullets" data-transition="slidedown">WINTER</a></li>
+                    <li><a href="#spring" data-icon="arrow-u" data-transition="slideup">SPRING</a></li>
+                    <li><a href="#summer" data-icon="arrow-u" data-transition="slideup">SUMMER</a></li>
+                    <li><a href="#winter" data-icon="arrow-u" data-transition="slideup">WINTER</a></li>
                 </ul>
             </div>
         </div>
@@ -156,11 +256,34 @@
     <!-- WINTER -->
     <div data-role="page" id="winter">
         <div data-role="header">
-            <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all" data-transition="slideup">home</a>
-            <h1>My Theatre</h1>
+            <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all" data-transition="fade">home</a>
+            <h1>WINTER</h1>
         </div>
 
         <div role="main" class="ui-content">
+
+            <div data-role="collapsibleset" data-theme="a" data-content-theme="a">
+                <div data-role="collapsible">
+                    <h3>WHEN is it?</h3>
+                <p>Officially December to February</p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>HOW is the weather?</h3>
+                    <h4>Average High and Low Temperature in Tokyo</h4>
+                    <p>
+                        <ul style="list-style: none; padding-left: 0;" >
+                            <li>December 12℃ - 4℃</li>
+                            <li>January 10℃ - 2℃ </li>
+                            <li>February 10℃ - 2℃</li>
+                        </ul>
+                    </p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>WHAT is the seasonal food?</h3>
+                <p>Hotpods, Oyster, MOchi etc</p>
+                </div>
+            </div>
+
             <p>MY favourite FILMS</p>
             
         </div>
@@ -168,9 +291,9 @@
         <div data-role="footer" data-position="fixed">
             <div data-role="navbar">
                 <ul>
-                    <li><a href="#spring" data-icon="bullets" data-transition="slidedown">SPRING</a></li>
-                    <li><a href="#summer" data-icon="bullets" data-transition="slidedown">SUMMER</a></li>
-                    <li><a href="#autumn" data-icon="bullets" data-transition="slidedown">AUTUMN</a></li>
+                    <li><a href="#spring" data-icon="arrow-u" data-transition="slideup">SPRING</a></li>
+                    <li><a href="#summer" data-icon="arrow-u" data-transition="slideup">SUMMER</a></li>
+                    <li><a href="#autumn" data-icon="arrow-u" data-transition="slideup">AUTUMN</a></li>
                 </ul>
             </div>
         </div>
